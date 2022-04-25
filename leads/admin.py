@@ -1,4 +1,8 @@
+from pyexpat import model
 from django.contrib import admin
-from .models import Lead
+from . import models
 
-admin.site.register(Lead)
+
+admin.site.register(models.User)
+admin.site.register(models.Agent)
+admin.site.register(models.Lead)
